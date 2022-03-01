@@ -5,7 +5,7 @@ variable "pubsub_prefix" {
 
 variable "loggingsink_folder_id" {
     type = string
-    default = "954902212336"
+    default = "[folder_id]"
 }
 
 variable "topic_names" {
