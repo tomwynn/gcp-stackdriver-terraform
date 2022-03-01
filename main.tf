@@ -18,6 +18,7 @@ resource "google_logging_folder_sink" "log_sinks" {
     description     = "Logging Sink for ${each.value.name}"
     folder          =  var.loggingsink_folder_id
     destination     = "pubsub.googleapis.com/${each.value.id}"
+    include_children = true
     #filter          = contains(keys(var.filters), "${each.value.name}") ? "yes" : "no filter"
     #filter          =  "${lookup(var.filters, "${each.value.name}")}"
     filter          = "${
