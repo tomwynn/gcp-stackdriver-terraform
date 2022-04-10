@@ -1,4 +1,4 @@
 provider "google" {
- project     = "global-soc-logging"
+ project     = "gcp-logging"
  region      = "us-central1"
 }
